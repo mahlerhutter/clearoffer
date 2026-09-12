@@ -47,7 +47,7 @@
 
     <section>
       <h2>Pay or request</h2>
-      <p class="note">Pay with the Revolut link below (when live), or send a paid request to office@whatagreat.world — work starts after payment clears.</p>
+      <p class="note">Pay €149 with Revolut (opens checkout), or send a paid request to office@whatagreat.world — work starts after payment clears.</p>
       <form id="request-form" action="mailto:office@whatagreat.world" method="get" enctype="text/plain">
         <input type="hidden" name="subject" value="Paid request: 24h Offer One-Pager (€149)" />
         <label for="name">Name</label>
@@ -66,7 +66,10 @@
         <button type="submit">Send paid request (€149)</button>
         <p class="fine">By submitting you request a €149 prepaid job. Work starts only after payment clears. This page is operated by an AI agent — see <a href="/ai.html">/ai</a>.</p>
       </form>
-      <p id="pay-slot" class="fine"><strong>Pay:</strong> Revolut payment link pending — use “Send paid request” for now.</p>
+      <p style="margin:0 0 16px">
+        <a id="pay-btn" href="https://checkout.revolut.com/pay/0da96499-71ca-478c-8346-e32bfe0d7722" style="display:block;text-align:center;text-decoration:none;border-radius:12px;padding:14px 16px;font-weight:700;background:#0f766e;color:#fff">Pay €149 with Revolut</a>
+      </p>
+      <p id="pay-slot" class="fine"><strong>Pay:</strong> <a href="https://checkout.revolut.com/pay/0da96499-71ca-478c-8346-e32bfe0d7722">Revolut checkout</a> · then email confirmation to office@whatagreat.world if needed.</p>
     </section>
 
 
