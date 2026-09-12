@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>24h Offer One-Pager — €149</title>
+  <meta name="description" content="Prepaid offer page in 24 hours. One Google Doc. Fixed price €149. whatagreatworld FlexCo." />
+  <style>
+    :root { color-scheme: light; --ink:#0f172a; --muted:#475569; --line:#e2e8f0; --bg:#f8fafc; --accent:#0f766e; }
+    * { box-sizing: border-box; }
+    body { margin:0; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; color:var(--ink); background:var(--bg); line-height:1.5; }
+    main { max-width: 720px; margin: 0 auto; padding: 48px 20px 80px; }
+    h1 { font-size: clamp(1.8rem, 4vw, 2.4rem); line-height:1.15; margin:0 0 12px; }
+    .lede { font-size:1.125rem; color:var(--muted); margin:0 0 28px; }
+    .price { display:inline-block; font-weight:700; font-size:1.25rem; background:#ccfbf1; color:#115e59; padding:6px 12px; border-radius:999px; margin-bottom:28px; }
+    section { background:#fff; border:1px solid var(--line); border-radius:16px; padding:24px; margin:0 0 20px; }
+    h2 { font-size:1.05rem; margin:0 0 12px; }
+    ul { margin:0; padding-left:1.1rem; }
+    li { margin:6px 0; }
+    label { display:block; font-size:0.9rem; font-weight:600; margin:14px 0 6px; }
+    input, textarea, select { width:100%; padding:12px 14px; border:1px solid var(--line); border-radius:10px; font:inherit; background:#fff; }
+    textarea { min-height: 110px; resize: vertical; }
+    button { margin-top:18px; width:100%; border:0; border-radius:12px; padding:14px 16px; font:inherit; font-weight:700; background:var(--accent); color:#fff; cursor:pointer; }
+    button:hover { filter: brightness(0.95); }
+    .fine { font-size:0.85rem; color:var(--muted); margin-top:14px; }
+    footer { margin-top:32px; font-size:0.85rem; color:var(--muted); }
+    footer a { color:var(--accent); }
+    .note { font-size:0.9rem; color:var(--muted); margin-top:8px; }
+  </style>
+</head>
+<body>
+  <main>
+    <p class="price">€149 · prepaid · 24h delivery</p>
+    <h1>Your offer, clear enough to sell — in 24 hours.</h1>
+    <p class="lede">For solo B2B operators with a live service and a fuzzy offer. One Google Doc. Fixed price. Paid before work starts.</p>
+
+    <section>
+      <h2>What you get</h2>
+      <ul>
+        <li>Problem → offer → proof placeholders → CTA</li>
+        <li>3 email openers matched to the offer</li>
+        <li>English or German</li>
+        <li>Delivered as one Google Doc within 24 hours of cleared payment</li>
+      </ul>
+      <p class="note">No retainers. No contracts. No team fiction. Built by an AI agent operated for whatagreatworld FlexCo.</p>
+    </section>
+
+    <section>
+      <h2>Pay or request</h2>
+      <p class="note">Pay with the Revolut link below (when live), or send a paid request to office@whatagreat.world — work starts after payment clears.</p>
+      <form id="request-form" action="mailto:office@whatagreat.world" method="get" enctype="text/plain">
+        <input type="hidden" name="subject" value="Paid request: 24h Offer One-Pager (€149)" />
+        <label for="name">Name</label>
+        <input id="name" name="body" type="text" required placeholder="Your name" />
+        <label for="email">Work email</label>
+        <input id="email" type="email" required placeholder="you@company.com" />
+        <label for="url">Product / service URL</label>
+        <input id="url" type="url" required placeholder="https://" />
+        <label for="lang">Language</label>
+        <select id="lang">
+          <option value="en">English</option>
+          <option value="de">Deutsch</option>
+        </select>
+        <label for="notes">What should the offer sell?</label>
+        <textarea id="notes" placeholder="One sentence on who buys and what outcome they want."></textarea>
+        <button type="submit">Send paid request (€149)</button>
+        <p class="fine">By submitting you request a €149 prepaid job. Work starts only after payment clears. This page is operated by an AI agent — see <a href="/ai.html">/ai</a>.</p>
+      </form>
+      <p id="pay-slot" class="fine"><strong>Pay:</strong> Revolut payment link pending — use “Send paid request” for now.</p>
+    </section>
+
+    <footer>
+      <div>whatagreatworld FlexCo · <a href="/ai.html">AI disclosure</a></div>
+      <div>No invented testimonials. No support after delivery beyond the Doc itself.</div>
+    </footer>
+  </main>
+  <script>
+    // Assemble mailto body from fields (no backend yet).
+    document.getElementById('request-form').addEventListener('submit', function (e) {
+      e.preventDefault();
+      var name = document.getElementById('name').value.trim();
+      var email = document.getElementById('email').value.trim();
+      var url = document.getElementById('url').value.trim();
+      var lang = document.getElementById('lang').value;
+      var notes = document.getElementById('notes').value.trim();
+      var body = [
+        'Paid request: 24h Offer One-Pager (€149)',
+        'Name: ' + name,
+        'Email: ' + email,
+        'URL: ' + url,
+        'Language: ' + lang,
+        'Notes: ' + notes
+      ].join('\\n');
+      window.location.href = 'mailto:office@whatagreat.world?subject=' +
+        encodeURIComponent('Paid request: 24h Offer One-Pager (€149)') +
+        '&body=' + encodeURIComponent(body);
+    });
+  </script>
+</body>
+</html>
