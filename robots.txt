@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://clearoffer.site/sitemap.xml
