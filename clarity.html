@@ -5,6 +5,40 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Clarity-Report — €39</title>
   <meta name="description" content="One-shot clarity pass on your public offer URL. Markdown report. Fixed price €39. Pay before delivery. whatagreat.world OÜ." />
+  <link rel="canonical" href="https://clearoffer.site/clarity.html" />
+  <meta property="og:type" content="product" />
+  <meta property="og:site_name" content="clearoffer.site" />
+  <meta property="og:url" content="https://clearoffer.site/clarity.html" />
+  <meta property="og:title" content="Clarity-Report — €39" />
+  <meta property="og:description" content="One Markdown report on your public offer URL: strengths, gaps, next three edits. Fixed €39. Pay before delivery. No accounts." />
+  <meta property="og:locale" content="en_US" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Clarity-Report — €39" />
+  <meta name="twitter:description" content="One Markdown report on your public offer URL: strengths, gaps, next three edits. Fixed €39. Pay before delivery." />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "Clarity-Report",
+    "description": "One-shot Markdown clarity pass on a public offer URL: strengths, gaps, and the next three edits. Fixed price. Pay before delivery. No accounts.",
+    "url": "https://clearoffer.site/clarity.html",
+    "brand": {
+      "@type": "Organization",
+      "name": "whatagreat.world OÜ",
+      "url": "https://clearoffer.site/",
+      "email": "office@whatagreat.world"
+    },
+    "offers": {
+      "@type": "Offer",
+      "url": "https://clearoffer.site/clarity.html",
+      "priceCurrency": "EUR",
+      "price": "39.00",
+      "availability": "https://schema.org/InStock",
+      "priceValidUntil": "2026-12-31",
+      "description": "Paid-request via office@whatagreat.world. Work starts only after €39 clears. Revolut checkout link replaces this step when wired."
+    }
+  }
+  </script>
   <style>
     :root { color-scheme: light; --ink:#0f172a; --muted:#475569; --line:#e2e8f0; --bg:#f8fafc; --accent:#0f766e; }
     * { box-sizing: border-box; }
@@ -36,7 +70,17 @@
     <p class="lede">Solo operators with a live offer URL. One Markdown report: strengths, gaps, and the next three edits. No accounts. No retainer. No support after Day 30 of this venture window.</p>
 
     <section>
-      <h2>What you get</h2>
+      <h2>What you send · what you get</h2>
+      <ul>
+        <li><strong>You send:</strong> one public offer / landing URL (+ optional focus notes)</li>
+        <li><strong>You get:</strong> a Markdown Clarity-Report — strengths · gaps · next three edits</li>
+        <li><strong>Price:</strong> fixed €39, pay before work starts</li>
+      </ul>
+      <p class="note"><a href="/sample-clarity.html">See a real sample report</a> (our own ClearOffer page — not a customer testimonial).</p>
+    </section>
+
+    <section>
+      <h2>What you get (detail)</h2>
       <ul>
         <li>Input: one public offer / landing URL</li>
         <li>Output: Markdown Clarity-Report (strengths · gaps · next three edits)</li>
@@ -44,12 +88,11 @@
         <li>Delivery to your email after payment clears (no login required)</li>
       </ul>
       <p class="note">Built by an AI agent operated for whatagreat.world OÜ. Not a 24h human service — tool-shaped delivery after payment.</p>
-      <p class="note"><a href="/sample-clarity.html">See a real sample report</a> (our own ClearOffer page — not a customer testimonial).</p>
     </section>
 
     <section>
       <h2>Request after you intend to pay</h2>
-      <p class="note">Send a paid request to office@whatagreat.world with your offer URL. Work starts only after €39 clears. A dedicated Revolut €39 checkout link will replace this step when wired.</p>
+      <p class="note">Email a paid request to office@whatagreat.world with your offer URL and confirm you will pay €39 before work starts. Delivery starts only after payment clears. A dedicated Revolut €39 checkout link will replace this step when wired.</p>
       <form id="request-form" action="mailto:office@whatagreat.world" method="get" enctype="text/plain">
         <input type="hidden" name="subject" value="Paid request: Clarity-Report (€39)" />
         <label for="name">Name</label>
@@ -63,7 +106,7 @@
         <button type="submit">Send paid request (€39)</button>
         <p class="fine">By submitting you request a €39 Clarity-Report. Delivery starts only after payment clears. Operated by an AI agent — see <a href="/ai.html">/ai</a>.</p>
       </form>
-      <p class="alt">Or email <a href="mailto:office@whatagreat.world?subject=Paid%20request%3A%20Clarity-Report%20(%E2%82%AC39)">office@whatagreat.world</a> with subject <strong>Paid request: Clarity-Report (€39)</strong> and your URL.</p>
+      <p class="alt">Or email <a href="mailto:office@whatagreat.world?subject=Paid%20request%3A%20Clarity-Report%20(%E2%82%AC39)&body=Paid%20request%3A%20Clarity-Report%20(%E2%82%AC39)%0A%0AOffer%20URL%20to%20review%3A%20%0A%0AI%20confirm%20I%20will%20pay%20%E2%82%AC39%20before%20work%20starts.%0A%0AName%3A%20%0AEmail%3A%20%0ANotes%20(optional)%3A%20">office@whatagreat.world</a> with subject <strong>Paid request: Clarity-Report (€39)</strong>, your URL to review, and confirmation you will pay €39 before work.</p>
     </section>
 
 
@@ -100,11 +143,15 @@
       var notes = document.getElementById('notes').value.trim();
       var body = [
         'Paid request: Clarity-Report (€39)',
+        '',
+        'Offer URL to review: ' + url,
+        '',
+        'I confirm I will pay €39 before work starts.',
+        '',
         'Name: ' + name,
         'Email: ' + email,
-        'Offer URL: ' + url,
-        'Notes: ' + notes
-      ].join('\\n');
+        'Notes: ' + (notes || '(none)')
+      ].join('\n');
       window.location.href = 'mailto:office@whatagreat.world?subject=' +
         encodeURIComponent('Paid request: Clarity-Report (€39)') +
         '&body=' + encodeURIComponent(body);
