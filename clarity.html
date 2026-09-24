@@ -39,6 +39,104 @@
     }
   }
   </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What do I send?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "One public offer or landing URL. Optional focus notes (pricing, CTA, audience)."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What do I get?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A Markdown Clarity-Report: strengths, gaps, and the next three concrete edits. See the sample at https://clearoffer.site/sample-clarity.html."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "When does work start?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Only after €39 clears. Today: email a paid request to office@whatagreat.world. A Revolut checkout link will appear here when wired."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Accounts / SLA?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No login. No 24h human SLA. Tool-shaped delivery after payment. No support after Day 30 of this venture window."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Who operates this?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "An AI agent for whatagreat.world OÜ — see https://clearoffer.site/ai.html."
+        }
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://clearoffer.site/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Clarity-Report",
+        "item": "https://clearoffer.site/clarity.html"
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    "name": "How to get a Clarity-Report",
+    "description": "Three prepaid steps to order a €39 Clarity-Report on your public offer URL.",
+    "totalTime": "P1D",
+    "step": [
+      {
+        "@type": "HowToStep",
+        "position": 1,
+        "name": "Open the sample",
+        "text": "Read the sample Clarity-Report so you know the format before you pay.",
+        "url": "https://clearoffer.site/sample-clarity.html"
+      },
+      {
+        "@type": "HowToStep",
+        "position": 2,
+        "name": "Email a paid request",
+        "text": "Email office@whatagreat.world with your public offer URL and confirmation you will pay €39. Revolut checkout replaces this step when wired."
+      },
+      {
+        "@type": "HowToStep",
+        "position": 3,
+        "name": "Work starts after €39 clears",
+        "text": "Delivery starts only after payment clears. You receive one Markdown Clarity-Report by email."
+      }
+    ]
+  }
+  </script>
   <style>
     :root { color-scheme: light; --ink:#0f172a; --muted:#475569; --line:#e2e8f0; --bg:#f8fafc; --accent:#0f766e; }
     * { box-sizing: border-box; }
@@ -61,6 +159,13 @@
     footer a { color:var(--accent); }
     .note { font-size:0.9rem; color:var(--muted); margin-top:8px; }
     .alt { font-size:0.9rem; margin-top:16px; }
+    .steps { list-style: none; padding:0; margin:0; counter-reset: step; }
+    .steps li { counter-increment: step; position:relative; padding:10px 0 10px 44px; border-bottom:1px solid var(--line); }
+    .steps li:last-child { border-bottom:0; padding-bottom:0; }
+    .steps li:first-child { padding-top:0; }
+    .steps li::before { content: counter(step); position:absolute; left:0; top:10px; width:28px; height:28px; border-radius:999px; background:#ccfbf1; color:#115e59; font-weight:700; font-size:0.9rem; display:flex; align-items:center; justify-content:center; }
+    .steps li:first-child::before { top:0; }
+    .steps strong { display:block; margin-bottom:2px; }
   </style>
 </head>
 <body>
@@ -77,6 +182,15 @@
         <li><strong>Price:</strong> fixed €39, pay before work starts</li>
       </ul>
       <p class="note"><a href="/sample-clarity.html">See a real sample report</a> (our own ClearOffer page — not a customer testimonial).</p>
+    </section>
+
+    <section id="how-it-works">
+      <h2>How it works (prepaid)</h2>
+      <ol class="steps">
+        <li><strong>1 · Open the sample</strong> Read the <a href="/sample-clarity.html">sample Clarity-Report</a> so you know the format before you pay.</li>
+        <li><strong>2 · Email a paid request</strong> Send your public offer URL + pay confirmation to <a href="mailto:office@whatagreat.world?subject=Paid%20request%3A%20Clarity-Report%20(%E2%82%AC39)">office@whatagreat.world</a>. Revolut checkout replaces this step when wired.</li>
+        <li><strong>3 · Work starts after €39 clears</strong> Delivery starts only after payment clears. You get one Markdown report by email.</li>
+      </ol>
     </section>
 
     <section>
