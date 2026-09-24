@@ -15,6 +15,26 @@
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:title" content="Sample Clarity-Report — clearoffer.site" />
   <meta name="twitter:description" content="Real sample Clarity-Report on our own ClearOffer page. Not a testimonial. Buy yours for €39." />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://clearoffer.site/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Sample Clarity-Report",
+        "item": "https://clearoffer.site/sample-clarity.html"
+      }
+    ]
+  }
+  </script>
   <style>
     :root { color-scheme: light; --ink:#0f172a; --muted:#475569; --line:#e2e8f0; --bg:#f8fafc; --accent:#0f766e; }
     * { box-sizing: border-box; }
@@ -32,6 +52,23 @@
     footer { margin-top:28px; font-size:0.85rem; color:var(--muted); }
     footer a { color:var(--accent); }
     a.cta { display:inline-block; margin-top:8px; font-weight:700; color:var(--accent); }
+    a.cta-btn { display:inline-block; margin:8px 0 0; padding:14px 18px; border-radius:12px; background:var(--accent); color:#fff; font-weight:700; text-decoration:none; }
+    a.cta-btn:hover { filter: brightness(0.95); }
+    label { display:block; font-size:0.9rem; font-weight:600; margin:14px 0 6px; }
+    input, textarea { width:100%; padding:12px 14px; border:1px solid var(--line); border-radius:10px; font:inherit; background:#fff; }
+    textarea { min-height: 80px; resize: vertical; }
+    button { margin-top:18px; width:100%; border:0; border-radius:12px; padding:14px 16px; font:inherit; font-weight:700; background:var(--accent); color:#fff; cursor:pointer; }
+    button:hover { filter: brightness(0.95); }
+    .fine { font-size:0.85rem; color:var(--muted); margin-top:14px; }
+    .note { font-size:0.9rem; color:var(--muted); margin-top:8px; }
+    .alt { font-size:0.9rem; margin-top:16px; }
+    .steps { list-style: none; padding:0; margin:0; counter-reset: step; }
+    .steps li { counter-increment: step; position:relative; padding:10px 0 10px 44px; border-bottom:1px solid var(--line); margin:0; }
+    .steps li:last-child { border-bottom:0; padding-bottom:0; }
+    .steps li:first-child { padding-top:0; }
+    .steps li::before { content: counter(step); position:absolute; left:0; top:10px; width:28px; height:28px; border-radius:999px; background:#ccfbf1; color:#115e59; font-weight:700; font-size:0.9rem; display:flex; align-items:center; justify-content:center; }
+    .steps li:first-child::before { top:0; }
+    .steps strong { display:block; margin-bottom:2px; }
   </style>
 </head>
 <body>
@@ -72,12 +109,66 @@
     </section>
 
     <p class="meta">Produced for whatagreat.world OÜ · AI-operated · <a href="/ai.html">/ai</a></p>
-    <p><a class="cta" href="/clarity.html">Buy a Clarity-Report for your URL (€39) →</a></p>
+
+    <section id="how-it-works">
+      <h2>How it works (prepaid)</h2>
+      <ol class="steps">
+        <li><strong>1 · You’re on the sample</strong> This page is the format you’ll get. Not a customer testimonial — it’s our own ClearOffer homepage.</li>
+        <li><strong>2 · Email a paid request</strong> Send your public offer URL + pay confirmation to <a href="mailto:office@whatagreat.world?subject=Paid%20request%3A%20Clarity-Report%20(%E2%82%AC39)">office@whatagreat.world</a>. Revolut checkout replaces this step when wired.</li>
+        <li><strong>3 · Work starts after €39 clears</strong> Delivery starts only after payment clears. You get one Markdown report by email.</li>
+      </ol>
+      <p class="note">Full offer + FAQ: <a href="/clarity.html">clarity.html</a>.</p>
+    </section>
+
+    <section id="request">
+      <h2>Request a Clarity-Report for your URL (€39)</h2>
+      <p class="note">Email a paid request with your offer URL and confirm you will pay €39 before work starts. Delivery starts only after payment clears. A dedicated Revolut €39 checkout link will replace this step when wired.</p>
+      <p><a class="cta-btn" href="mailto:office@whatagreat.world?subject=Paid%20request%3A%20Clarity-Report%20(%E2%82%AC39)&body=Paid%20request%3A%20Clarity-Report%20(%E2%82%AC39)%0A%0AOffer%20URL%20to%20review%3A%20%0A%0AI%20confirm%20I%20will%20pay%20%E2%82%AC39%20before%20work%20starts.%0A%0AName%3A%20%0AEmail%3A%20%0ANotes%20(optional)%3A%20%0A%0ADelivery%20is%20operated%20by%20an%20AI%20agent%20%E2%80%94%20https%3A%2F%2Fclearoffer.site%2Fai.html">Email paid request (€39) →</a></p>
+      <form id="request-form" action="mailto:office@whatagreat.world" method="get" enctype="text/plain">
+        <input type="hidden" name="subject" value="Paid request: Clarity-Report (€39)" />
+        <label for="name">Name</label>
+        <input id="name" type="text" required placeholder="Your name" />
+        <label for="email">Work email</label>
+        <input id="email" type="email" required placeholder="you@company.com" />
+        <label for="url">Public offer / landing URL</label>
+        <input id="url" type="url" required placeholder="https://" />
+        <label for="notes">Anything the report should focus on (optional)</label>
+        <textarea id="notes" placeholder="e.g. pricing clarity, CTA, who it's for"></textarea>
+        <button type="submit">Send paid request (€39)</button>
+        <p class="fine">By submitting you request a €39 Clarity-Report. Delivery starts only after payment clears. Operated by an AI agent — see <a href="/ai.html">/ai</a>.</p>
+      </form>
+      <p class="alt">Or email <a href="mailto:office@whatagreat.world?subject=Paid%20request%3A%20Clarity-Report%20(%E2%82%AC39)&body=Paid%20request%3A%20Clarity-Report%20(%E2%82%AC39)%0A%0AOffer%20URL%20to%20review%3A%20%0A%0AI%20confirm%20I%20will%20pay%20%E2%82%AC39%20before%20work%20starts.%0A%0AName%3A%20%0AEmail%3A%20%0ANotes%20(optional)%3A%20%0A%0ADelivery%20is%20operated%20by%20an%20AI%20agent%20%E2%80%94%20https%3A%2F%2Fclearoffer.site%2Fai.html">office@whatagreat.world</a> with subject <strong>Paid request: Clarity-Report (€39)</strong>, your URL to review, pay confirmation €39, and optional notes.</p>
+    </section>
 
     <footer>
       <div>whatagreat.world OÜ · <a href="/ai.html">AI disclosure</a> · <a href="/clarity.html">Clarity-Report</a> · <a href="/">ClearOffer</a></div>
       <div>Sample of deliverable shape only. Your paid report is generated from your public offer URL after €39 clears.</div>
     </footer>
   </main>
+  <script>
+    document.getElementById('request-form').addEventListener('submit', function (e) {
+      e.preventDefault();
+      var name = document.getElementById('name').value.trim();
+      var email = document.getElementById('email').value.trim();
+      var url = document.getElementById('url').value.trim();
+      var notes = document.getElementById('notes').value.trim();
+      var body = [
+        'Paid request: Clarity-Report (€39)',
+        '',
+        'Offer URL to review: ' + url,
+        '',
+        'I confirm I will pay €39 before work starts.',
+        '',
+        'Name: ' + name,
+        'Email: ' + email,
+        'Notes: ' + (notes || '(none)'),
+        '',
+        'Delivery is operated by an AI agent — https://clearoffer.site/ai.html'
+      ].join('\n');
+      window.location.href = 'mailto:office@whatagreat.world?subject=' +
+        encodeURIComponent('Paid request: Clarity-Report (€39)') +
+        '&body=' + encodeURIComponent(body);
+    });
+  </script>
 </body>
 </html>
