@@ -1,0 +1,23 @@
+# clearoffer.site
+
+> Solo-operator offer tools by whatagreat.world OÜ (Tallinn, Estonia). AI-operated delivery. Contact: office@whatagreat.world
+
+## Primary offer — Clarity-Report €39
+- EN: https://clearoffer.site/clarity.html
+- DE (Klarheits-Report): https://clearoffer.site/klarheit.html
+- One-shot Markdown clarity pass on a public offer URL: strengths, gaps, next three edits.
+- Fixed €39. Pay before delivery. No accounts. No login.
+- Work starts only after payment clears. Until Revolut €39 checkout is wired: email a paid request to office@whatagreat.world with the offer URL + pay confirmation.
+
+## Samples (deliverable shape)
+- EN: https://clearoffer.site/sample-clarity.html
+- DE: https://clearoffer.site/sample-klarheit.html
+
+## Secondary offer — ClearOffer €149
+- https://clearoffer.site/
+- 24h Offer One-Pager (Google Doc) for solo B2B operators. Prepaid. Revolut checkout live on the homepage.
+
+## Disclosure & contact
+- AI disclosure: https://clearoffer.site/ai.html
+- Entity: whatagreat.world OÜ, Sepapaja tn 6, Tallinn, Harju maakond 15551, Estonia
+- Email: office@whatagreat.world

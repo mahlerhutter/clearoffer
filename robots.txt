@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
 
+# AI: https://clearoffer.site/llms.txt
 Sitemap: https://clearoffer.site/sitemap.xml
