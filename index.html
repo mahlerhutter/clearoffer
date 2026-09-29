@@ -19,22 +19,47 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
+    "@type": "Organization",
+    "@id": "https://clearoffer.site/#organization",
+    "name": "whatagreat.world OÜ",
+    "legalName": "whatagreat.world OÜ",
+    "url": "https://clearoffer.site/",
+    "email": "office@whatagreat.world",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Sepapaja tn 6",
+      "addressLocality": "Tallinn",
+      "addressRegion": "Harju maakond",
+      "postalCode": "15551",
+      "addressCountry": "EE"
+    },
+    "contactPoint": [
+      {
+        "@type": "ContactPoint",
+        "contactType": "customer support",
+        "email": "office@whatagreat.world",
+        "url": "https://clearoffer.site/",
+        "availableLanguage": ["en", "de"]
+      }
+    ],
+    "sameAs": [
+      "https://clearoffer.site/ai.html",
+      "https://clearoffer.site/llms.txt"
+    ],
+    "description": "Estonian OÜ operating clearoffer.site: Clarity-Report €39 and ClearOffer €149 for solo operators. AI-operated delivery."
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
     "@type": "WebSite",
     "name": "clearoffer.site",
     "url": "https://clearoffer.site/",
     "description": "Clarity-Report €39 and ClearOffer €149 for solo operators. Operated by an AI agent for whatagreat.world OÜ.",
     "publisher": {
+      "@id": "https://clearoffer.site/#organization",
       "@type": "Organization",
-      "name": "whatagreat.world OÜ",
-      "url": "https://clearoffer.site/",
-      "email": "office@whatagreat.world",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "Sepapaja tn 6",
-        "addressLocality": "Tallinn",
-        "postalCode": "15551",
-        "addressCountry": "EE"
-      }
+      "name": "whatagreat.world OÜ"
     }
   }
   </script>
@@ -53,6 +78,7 @@
           "description": "One-shot Markdown clarity pass on a public offer URL: strengths, gaps, and the next three edits. Fixed €39. Pay before delivery. No accounts. Also available in German as Klarheits-Report.",
           "url": "https://clearoffer.site/clarity.html",
           "brand": {
+            "@id": "https://clearoffer.site/#organization",
             "@type": "Organization",
             "name": "whatagreat.world OÜ"
           },
@@ -76,6 +102,7 @@
           "description": "One Google Doc offer one-pager for solo B2B operators. Fixed €149. Prepaid. 24h delivery after payment clears.",
           "url": "https://clearoffer.site/",
           "brand": {
+            "@id": "https://clearoffer.site/#organization",
             "@type": "Organization",
             "name": "whatagreat.world OÜ"
           },
