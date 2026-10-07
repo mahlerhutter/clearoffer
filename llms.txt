@@ -18,6 +18,7 @@
 - DE: Checkliste für Angebotsseiten (10 Prüfpunkte, German twin): https://clearoffer.site/angebotsseite-checkliste.html
 - How to write the price section of a service page (formats, what goes next to the number, VAT wording, template): https://clearoffer.site/price-section-guide.html
 - One call to action or several on a service page (picking the primary action, secondary actions, button wording, placement, CTA block): https://clearoffer.site/call-to-action-guide.html
+- What proof to show on a service page when you have no testimonials yet (sample deliverable, worked example, process, verifiable credentials, clear terms, what never to fake, proof block): https://clearoffer.site/proof-without-testimonials.html
 
 ## Secondary offer — ClearOffer €149
 - https://clearoffer.site/
