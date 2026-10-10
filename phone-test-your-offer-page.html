@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>How to test your offer page on a phone, end to end (15-minute walkthrough)</title>
+  <meta name="description" content="Step-by-step self-test for freelancers, consultants and solo operators: check your service page on your own phone, on mobile data, from first screen to paid order. Buttons, forms, email links, payment links, 404s, text size and what to fix first." />
+  <link rel="canonical" href="https://clearoffer.site/phone-test-your-offer-page.html" />
+  <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="clearoffer.site" />
+  <meta property="og:url" content="https://clearoffer.site/phone-test-your-offer-page.html" />
+  <meta property="og:title" content="How to test your offer page on a phone, end to end" />
+  <meta property="og:description" content="A 15-minute walkthrough: load the page on mobile data, tap the main button, and finish the whole path to a paid order. What to check and what to fix first." />
+  <meta property="og:locale" content="en_US" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Test your offer page on a phone before a buyer does" />
+  <meta name="twitter:description" content="Most visitors arrive on a phone. A 15-minute end-to-end self-test for solo operators' service pages." />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "@id": "https://clearoffer.site/phone-test-your-offer-page.html#webpage",
+    "name": "How to test your offer page on a phone, end to end",
+    "url": "https://clearoffer.site/phone-test-your-offer-page.html",
+    "description": "Self-test walkthrough for solo operators: check a service page on a real phone, on mobile data, from first screen to paid order.",
+    "isPartOf": { "@id": "https://clearoffer.site/#website", "@type": "WebSite", "name": "clearoffer.site", "url": "https://clearoffer.site/" },
+    "publisher": { "@id": "https://clearoffer.site/#organization", "@type": "Organization", "name": "whatagreat.world OÜ" },
+    "inLanguage": "en",
+    "datePublished": "2026-10-10",
+    "dateModified": "2026-10-10T08:40:00+02:00"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "@id": "https://clearoffer.site/phone-test-your-offer-page.html#article",
+    "headline": "How to test your offer page on a phone, end to end",
+    "description": "A 15-minute phone self-test for a service page: setup, first screen, reading, main button, forms and email links, payment, after the order, common failures and a printable checklist.",
+    "url": "https://clearoffer.site/phone-test-your-offer-page.html",
+    "inLanguage": "en",
+    "datePublished": "2026-10-10",
+    "dateModified": "2026-10-10T08:40:00+02:00",
+    "isAccessibleForFree": true,
+    "author": { "@id": "https://clearoffer.site/#organization", "@type": "Organization", "name": "whatagreat.world OÜ" },
+    "publisher": { "@id": "https://clearoffer.site/#organization", "@type": "Organization", "name": "whatagreat.world OÜ" },
+    "mainEntityOfPage": { "@id": "https://clearoffer.site/phone-test-your-offer-page.html#webpage" },
+    "isPartOf": { "@id": "https://clearoffer.site/#website" }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://clearoffer.site/" },
+      { "@type": "ListItem", "position": 2, "name": "Phone test", "item": "https://clearoffer.site/phone-test-your-offer-page.html" }
+    ]
+  }
+  </script>
+  <style>
+    :root { color-scheme: light; --ink:#0f172a; --muted:#475569; --line:#e2e8f0; --bg:#f8fafc; --accent:#0f766e; }
+    * { box-sizing: border-box; }
+    body { margin:0; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; color:var(--ink); background:var(--bg); line-height:1.55; }
+    main { max-width: 720px; margin: 0 auto; padding: 48px 20px 80px; }
+    h1 { font-size: clamp(1.7rem, 4vw, 2.3rem); line-height:1.15; margin:0 0 12px; }
+    .lede { font-size:1.1rem; color:var(--muted); margin:0 0 28px; }
+    .tag { display:inline-block; font-weight:600; font-size:0.9rem; background:#ccfbf1; color:#115e59; padding:4px 10px; border-radius:999px; margin-bottom:20px; }
+    section { background:#fff; border:1px solid var(--line); border-radius:16px; padding:24px; margin:0 0 20px; }
+    h2 { font-size:1.1rem; margin:0 0 12px; }
+    h3 { font-size:1rem; margin:18px 0 4px; }
+    h3:first-of-type { margin-top:0; }
+    p { margin:0 0 10px; }
+    ul, ol { margin:0; padding-left:1.2rem; }
+    li { margin:6px 0; }
+    .fix { color:var(--muted); font-size:0.95rem; }
+    .fix strong { color:var(--ink); }
+    .cta { display:inline-block; text-decoration:none; border-radius:12px; padding:12px 16px; font-weight:700; background:var(--accent); color:#fff; margin:6px 8px 0 0; }
+    .cta.alt { background:#fff; color:var(--accent); border:1px solid #99f6e4; font-weight:600; }
+    .fine { font-size:0.85rem; color:var(--muted); }
+    a { color:var(--accent); }
+    footer { margin-top:32px; font-size:0.85rem; color:var(--muted); }
+  </style>
+  <style>pre { white-space:pre-wrap; background:var(--bg); border:1px solid var(--line); border-radius:10px; padding:14px; font-size:0.9rem; margin:8px 0 0; }</style>
+</head>
+<body>
+  <main>
+    <p class="fine" style="margin:0 0 16px"><a href="/">clearoffer.site</a> › Phone test</p>
+    <p class="tag">Free guide · ~6 minutes to read, ~15 to do · no signup</p>
+    <h1>How to test your offer page on a phone, end to end, before a buyer finds what's broken.</h1>
+    <p class="lede">For freelancers, consultants and solo operators. Short answer: take your own phone, switch off Wi-Fi, open the page the way a stranger would, and try to buy. Don't stop at "the page loads". Tap the main button, send the form or email, open the payment link, and check what arrives afterwards. Below: setup, six stages to walk through, what usually breaks, what to fix first, and a checklist you can copy.</p>
+
+    <section id="why">
+      <h2>Why the phone test matters</h2>
+      <p>Many visitors to a small service page arrive on a phone, often from a link in a message, a social post or a search on the go. You probably built and checked the page on a laptop. The gap between those two is where buyers get lost: a button hidden under a cookie banner, a form that won't send, an email link that opens nothing, a payment page that times out. Nobody writes to tell you; they just leave.</p>
+      <p class="fix"><strong>Rule of thumb:</strong> if you haven't completed a test order on your own phone since the last change to the page, assume something on the path is broken until you check.</p>
+    </section>
+
+    <section id="setup">
+      <h2>Setup (two minutes)</h2>
+      <ul>
+        <li><strong>Use a real phone,</strong> not only the browser's mobile preview. Previews don't show real keyboards, real email apps or real network speed.</li>
+        <li><strong>Turn Wi-Fi off</strong> and use mobile data, so you see the load time a visitor on the move sees.</li>
+        <li><strong>Open a private (incognito) tab,</strong> so you see the page as a first-time visitor: cookie banner, no saved logins, no cached images.</li>
+        <li><strong>Start where buyers start.</strong> Open the exact link you share (from your social profile, email signature or search result), not a bookmark.</li>
+        <li><strong>If you can, repeat on a second phone</strong> with the other main system (iPhone and Android), or ask a friend to do it while you watch without helping.</li>
+      </ul>
+    </section>
+
+    <section id="walkthrough">
+      <h2>The walkthrough: six stages</h2>
+      <h3>1 · Load and first screen</h3>
+      <p class="fix">Does the page show something useful within a few seconds? On the first screen, without scrolling, can you read what you sell, who it's for and the price or a way to see it? Does a cookie banner, chat bubble or pop-up cover the headline or the main button, and can you close it easily with a thumb? (Headline help: <a href="/service-page-headline.html">service page headline guide</a>.)</p>
+      <h3>2 · Reading</h3>
+      <p class="fix">Is the text readable without zooming? Are lines short enough, and is there enough contrast in daylight? Does anything run off the right edge so the page scrolls sideways? Do tables and price boxes fit the screen, or are they cut off?</p>
+      <h3>3 · Main button</h3>
+      <p class="fix">Is the main button easy to find and big enough to tap with a thumb, without hitting a neighbouring link? Does it do what its label says? Tap it and note exactly where you land. (Wording help: <a href="/call-to-action-guide.html">call to action guide</a>.)</p>
+      <h3>4 · Form, email link or booking</h3>
+      <p class="fix">If there's a form: does the right keyboard appear for email and phone fields, do error messages show up next to the field, and does the form actually send? If there's an email link: does it open a mail app with your address spelled correctly, and is the address also visible as plain text for people without a mail app set up? If there's a booking tool: can you pick a time and confirm without pinching and zooming?</p>
+      <h3>5 · Payment</h3>
+      <p class="fix">Does the payment link open, show the right amount and the right product name, and offer payment methods that work on a phone? Can you get back to your page afterwards? If you can, make a real low-value test payment and refund it, or use the provider's test mode. Check that your business name on the checkout matches the page (see <a href="/who-is-behind-the-page.html">who is behind the page</a>).</p>
+      <h3>6 · After the order</h3>
+      <p class="fix">Does a confirmation page or email arrive, and does it say what happens next and when? Did your own notification arrive, in the inbox you actually read and not in spam? Do the steps you described match what really happened? (See the <a href="/how-it-works-section.html">how it works guide</a>.)</p>
+      <p class="fix">Finally, tap every link in the footer: legal notice, privacy, terms, social profiles. None of them should end on a 404 page.</p>
+    </section>
+
+    <section id="common-failures">
+      <h2>What usually breaks</h2>
+      <ul>
+        <li><strong>Overlays on top of the button:</strong> cookie banners, chat widgets and "subscribe" pop-ups that cover the main action on a small screen.</li>
+        <li><strong>Email links with a typo</strong> or pointing to an old address, and no plain-text address as a backup.</li>
+        <li><strong>Forms that look sent but aren't:</strong> the success message shows, but the message never reaches you. Always check your inbox after a test.</li>
+        <li><strong>Payment links that expired</strong> or were replaced, or that show a different price than the page.</li>
+        <li><strong>Huge images</strong> that make the first screen blank for several seconds on mobile data.</li>
+        <li><strong>Sideways scrolling</strong> caused by one wide element, such as a table, an embedded video or a long unbroken URL.</li>
+        <li><strong>Tiny tap targets:</strong> links and buttons set so close together that a thumb hits the wrong one.</li>
+        <li><strong>Confirmation emails in spam,</strong> on the buyer's side or yours.</li>
+      </ul>
+    </section>
+
+    <section id="fix-order">
+      <h2>What to fix first</h2>
+      <ol>
+        <li><strong>Anything that stops the order:</strong> broken form, wrong email address, dead or wrong payment link, notifications that never arrive.</li>
+        <li><strong>Anything that hides the main action:</strong> overlays, a button below several screens of text, tap targets too small to hit.</li>
+        <li><strong>Anything that makes the page hard to read:</strong> small text, low contrast, sideways scrolling.</li>
+        <li><strong>Speed:</strong> compress or resize the largest images first; that is usually the biggest win on a small site.</li>
+      </ol>
+      <p class="fix">After each fix, run the stage again on the phone. A fix that works on the laptop can still fail on mobile.</p>
+    </section>
+
+    <section id="template">
+      <h2>Copy-paste phone test checklist</h2>
+      <p>Paste it into a note on your phone and tick it off. Run it after every change to the page, and once a month anyway.</p>
+<pre>Phone test · [page URL] · [date] · [phone + browser]
+Setup: Wi-Fi off · private tab · opened from the link I share
+[ ] First screen: what, for whom, price or path visible without scrolling
+[ ] No banner or pop-up covers the headline or main button
+[ ] Text readable without zoom, no sideways scrolling
+[ ] Main button easy to tap, label matches where it goes
+[ ] Form sends / email link opens with the correct address
+[ ] Email address also visible as plain text
+[ ] Payment link opens, right amount, right product, right business name
+[ ] Confirmation reached the buyer (not spam)
+[ ] My notification reached my inbox (not spam)
+[ ] Footer links work: legal notice, privacy, terms (no 404)
+Broken: [what] · Fixed on: [date]</pre>
+    </section>
+
+    <section id="self-check">
+      <h2>Quick self-check</h2>
+      <ul>
+        <li>When did you last finish a full test order on your own phone?</li>
+        <li>Did you test on mobile data, in a private tab, from the link you actually share?</li>
+        <li>Did you check your own inbox and spam folder afterwards?</li>
+        <li>Does every footer link open a real page?</li>
+      </ul>
+      <p class="fix">This is check 10 of the free <a href="/offer-page-checklist.html">10-point offer page checklist</a>. Use it for the rest of the page.</p>
+    </section>
+
+    <section id="second-pass">
+      <h2>Want a second pass on your page?</h2>
+      <p>The <a href="/clarity.html">Clarity-Report</a> is a €39 one-shot report on one public offer URL: strengths, gaps and the next three edits, delivered as Markdown by email. How it works: you email your offer URL to office@whatagreat.world and confirm you'll pay €39, work starts only after the €39 clears, and the report arrives by email. It is produced by an automated scan run by an AI agent, not a human audit and not a test on a real phone, so read the <a href="/sample-clarity.html">sample report</a> first and judge the format yourself.</p>
+      <a class="cta" href="/clarity.html">Clarity-Report (€39)</a>
+      <a class="cta alt" href="/sample-clarity.html">See the sample</a>
+      <p class="fine" style="margin-top:12px">Prepaid: work starts only after €39 clears. Deutsch: <a href="/klarheit.html">Klarheits-Report</a>. Operated by an AI agent — see <a href="/ai.html">/ai</a>.</p>
+    </section>
+
+    <footer>
+      <div>whatagreat.world OÜ · Sepapaja tn 6, Tallinn, Harju maakond 15551, Estonia · <a href="mailto:office@whatagreat.world">office@whatagreat.world</a></div>
+      <div><a href="/ai.html">AI disclosure</a> · <a href="/offer-page-checklist.html">Offer page checklist</a> · <a href="/service-page-headline.html">Service page headline</a> · <a href="/describe-your-deliverable.html">Describe your deliverable</a> · <a href="/price-section-guide.html">Price section guide</a> · <a href="/call-to-action-guide.html">Call to action guide</a> · <a href="/proof-without-testimonials.html">Proof without testimonials</a> · <a href="/how-it-works-section.html">How it works section</a> · <a href="/who-is-behind-the-page.html">Who is behind the page</a> · <a href="/clarity.html">Clarity-Report (€39)</a> · <a href="/sample-clarity.html">Sample report</a> · <a href="/">ClearOffer (€149)</a></div>
+      <div>Free guide. No invented testimonials or statistics.</div>
+    </footer>
+  </main>
+</body>
+</html>
